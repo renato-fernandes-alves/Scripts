@@ -1,0 +1,7 @@
+read "Escreva o caminho do diretorio: " a
+read "Escreva o caminho do diretorio: " b
+read "Escreva o caminho do diretorio: " c
+echo "${a},${b},${c}"
+ls ${a}
+ls ${b}
+ls ${c}
