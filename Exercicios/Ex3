@@ -1,0 +1,4 @@
+hoje=$(date +"%d-%m-%y")
+echo ${hoje}
+mkdir /tmp/${hoje}
+cp -r /home/user/* /tmp/${hoje}
