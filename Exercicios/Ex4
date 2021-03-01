@@ -1,0 +1,3 @@
+tar -cvf Diretorio.tar /tmp/${hoje}
+cp -r Diretorio.tar /home/user
+rm -rf /tmp/${hoje}
