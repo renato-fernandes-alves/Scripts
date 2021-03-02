@@ -1,8 +1,11 @@
-echo -e "O shell possibilita ao usuario a criação de variáveis e que se lhes atribuam valores guardados durante a execução do mesmo."
-echo "Exemplo" nome = "Renato"
-echo "O echo mostra o conteúdo de $nome na tela. O argumento passado para o echo é ``renato'' pois o shell já fez a interpolação da variável $nome na cadeia de caracteres correspondente.
+echo -e "O shell possibilita ao usuario a criação de variáveis e que se lhes atribuam valores guardados durante a execução do mesmo.\n Exemplo: "
+nome = "Renato"
+
+echo 'O echo mostra o conteúdo de $nome na tela. O argumento passado para o echo é ``renato'' pois o shell já fez a interpolação da variável $nome na cadeia de caracteres correspondente.'
 echo 'As variáveis podem ser usadas em qualquer comando no contexto do shell.'
-echo -e "Para referir-se ao nome de uma variável sem ambiguidade, inclue-se seu nome entre chaves { } , observe:\n"
+echo -e 'Para referir-se ao nome de uma variável sem ambiguidade, inclue-se seu nome entre chaves { } , observe:\n'
 
 $ set dados= "/informaçao/curso"
 $ cp ${dados}/aula2.tex /home/alunos
+
+echo 'O Bash executa a substituição de variáveis antes que o comando seja realmente executado. O Linux Bash Shell procura todos os sinais ‘$’ antes de executar o comando e substitui-os pelo valor da variável.'
