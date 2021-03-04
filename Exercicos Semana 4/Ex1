@@ -1,0 +1,3 @@
+read -p "Digite um numero que seja inteiro:" x
+x=$(( $x + 21 ))
+echo $x
