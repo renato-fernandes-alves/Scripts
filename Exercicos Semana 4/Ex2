@@ -1,0 +1,2 @@
+soma=$(( $15 + $20 + $25 ))
+echo "A soma total foi: ${soma}"
