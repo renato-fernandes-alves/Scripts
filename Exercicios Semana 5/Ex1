@@ -1,0 +1,14 @@
+touch help_red.sh
+chmod +x help_red.sh
+
+echo ' 2> serve para redirecionar a saida de erro de um comando para um arquivo. Ex: rm teste.txt 2> erro.log '
+echo ' >  Serve para redirecionar a saida padrão de um comando para um arquivo. Ex: pwd > Atual.txt '
+echo ' &> Redireciona tanto a saida de erro quanto a saida padrao para um determinado arquivo. Ex: ls Atividades &> Teste.txt  '
+echo ' >> Redireciona a saida padrão de um comando para um arquivo, mas sem substituir oq ja estava dentro do arquivo. Ex: ls >> Logs.txt '
+echo ' 2>> Redireciona a saida de erro de um comando para um arquivo sem substituir oq ja estava dentro do arquivo. Ex: ls Aula1 2>> Erros.txt '
+echo ' &>> Redireciona tanto a saida de erro quanto a saida padrao para um determinado arquivo, preservado o que ja estava dentro do arquivo. Ex: ls -a Aula1 &>> Teste.txt '
+echo ' <  Redireciona a entrada padrão para um arquivo. Ex: ls -a < listagem.txt '
+ehco ' <<< Redireciona a entrada padrão para uma string. Ex: wc -l <<< "Teste.txt" '
+echo ' <<  Redireciona a entrada padrão para um arquivo, sob uma condição de parada enquanto estiver sendo construido o arquivo. wc -l << start '
+
+./help_red.sh
