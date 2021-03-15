@@ -1,0 +1,11 @@
+3) touch 3.sh
+chmod +x 3.sh
+
+read "Escreva o nome de um arquivo: " a
+read "Escreva o nome de um arquivo: " b
+read "Escreva o nome de um arquivo: " c
+
+ls ${a} > log.log 2> erro.log
+ls ${b} > log.log 2> erro.log
+ls ${c} > log.log 2> erro.log
+
