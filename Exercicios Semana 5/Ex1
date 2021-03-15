@@ -10,5 +10,6 @@ echo ' &>> Redireciona tanto a saida de erro quanto a saida padrao para um deter
 echo ' <  Redireciona a entrada padrão para um arquivo. Ex: ls -a < listagem.txt '
 ehco ' <<< Redireciona a entrada padrão para uma string. Ex: wc -l <<< "Teste.txt" '
 echo ' <<  Redireciona a entrada padrão para um arquivo, sob uma condição de parada enquanto estiver sendo construido o arquivo. wc -l << start '
+ehco '  |  Redireciona a saída de um comando para outro. Ex: echo "Good Morning" | tr 'o''a'
 
 ./help_red.sh
