@@ -1,0 +1,7 @@
+a="Dir_a"
+b="Dir_b"
+
+ls -l ./"${a}"/ | grep "^-" -c > a.txt
+ls -l ./"${b}"/ | grep "^-" -c > b.txt
+
+(( a > b )) && echo "${a}" || echo "${b}"
