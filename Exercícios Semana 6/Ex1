@@ -1,0 +1,4 @@
+read "Escreva um numero inteiro" a
+read "Escreva um numero inteiro" b
+
+(( a > b )) && echo "${b}" || echo "${a}"
