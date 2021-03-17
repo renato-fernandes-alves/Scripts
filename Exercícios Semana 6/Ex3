@@ -1,0 +1,7 @@
+read "Escreva o nome de um arquivo" a
+read "Escreva o nome de outro arquivo" b
+ 
+wc -l "${a}" > a.txt
+wc -l "${b}" > b.txt
+
+(( a.txt > b.txt )) && echo "${a}" || echo "${b}"
