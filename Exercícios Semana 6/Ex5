@@ -2,3 +2,4 @@ a="Arq"
 
 
 wc -l ${a} > a.txt
+(Esta faltando ainda)
