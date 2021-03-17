@@ -1,0 +1,7 @@
+a="Ex1"
+b="Ex2"
+C="Ex3"
+
+cat "${a}" && echo "SIM" || echo "NÂO"
+cat "${b}" && echo "SIM" || echo "NÂO"
+cat "${c}" && echo "SIM" || echo "NÂO"
