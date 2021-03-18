@@ -4,4 +4,4 @@ b="Dir_b"
 dir1=$( ls -l ./"${a}"/ | grep "^-" -c )
 dir2=$( ls -l ./"${b}"/ | grep "^-" -c )
 
-(( ${dir1} > ${dir2} )) && echo "${a}" || echo "${b}"
+(( ${dir1} > ${dir2} )) && ls "${a}" || ls "${b}"
