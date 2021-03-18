@@ -1,7 +1,7 @@
 a="Dir_a"
 b="Dir_b"
 
-ls -l ./"${a}"/ | grep "^-" -c > a.txt
-ls -l ./"${b}"/ | grep "^-" -c > b.txt
+dir1=$( ls -l ./"${a}"/ | grep "^-" -c )
+dir2=$( ls -l ./"${b}"/ | grep "^-" -c )
 
-(( a > b )) && echo "${a}" || echo "${b}"
+(( ${dir1} > ${dir2} )) && echo "${a}" || echo "${b}"
