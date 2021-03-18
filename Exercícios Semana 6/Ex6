@@ -1,0 +1,6 @@
+read -p "Digite um número: " x
+read -p "Digite outro número: " y
+
+a=$(bc <<< "${a} < ${b}")
+
+(( ${a} > 0 )) && echo ${x} || echo ${y}
