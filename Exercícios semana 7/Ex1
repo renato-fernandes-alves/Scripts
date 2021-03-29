@@ -1,0 +1,9 @@
+for x in $(seq 1 101)
+do
+    a=$(x)
+    (( a % 2 == 0 )) && echo ${a}
+    
+done
+
+$1
+$2
