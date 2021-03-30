@@ -1,0 +1,6 @@
+ler=$(ls)
+for x in $(ler)
+do
+  l=$(wc -l ${x} | cut -c 1) 
+  echo "O arquivo ${x} tem ${l} linhas"
+done
