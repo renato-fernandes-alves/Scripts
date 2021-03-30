@@ -1,9 +1,8 @@
-
-read -p "Digite um numero" a
-read -p "Digite outro numero" b
+read -p "Digite um numero: " a
+read -p "Digite outro numero: " b
  
-for i in seq(${a} ${b})
+for i in $(seq ${a} ${b})
 do
-  Soma=$(( ${soma} + ${i} )) 
+  soma=$(( ${soma} + ${i} ))
 done
-echo " A soma total foi ${Soma}
+echo " A soma total foi ${soma} "
