@@ -1,9 +1,5 @@
 for x in $(seq 1 101)
 do
-    a=$(x)
-    (( a % 2 == 0 )) && echo ${a}
-    
+    (( x % 2 == 0 )) && echo ${x}
 done
 
-$1
-$2
