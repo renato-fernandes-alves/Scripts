@@ -4,3 +4,12 @@ do
   l=$(wc -l ${x} | cut -c 1) 
   echo "O arquivo ${x} tem ${l} linhas"
 done
+
+
+ler=$(ls)
+for x in $(wc -l ${ler} | sort -n)
+do
+  l=$(wc -l ${x} | cut -c 1) 
+  echo "O arquivo ${x} tem ${l} linhas"
+done
+
