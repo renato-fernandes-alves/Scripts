@@ -1,15 +1,7 @@
-ler=$(ls)
-for x in $(ler)
-do
-  l=$(wc -l ${x} | cut -c 1) 
-  echo "O arquivo ${x} tem ${l} linhas"
-done
+itens=$(ls -F | grep -v '/')
 
-
-ler=$(ls)
-for x in $(wc -l ${ler} | sort -n)
+for i in ${itens}
 do
-  l=$(wc -l ${x} | cut -c 1) 
-  echo "O arquivo ${x} tem ${l} linhas"
+	echo $(wc -l ${i})
 done
 
