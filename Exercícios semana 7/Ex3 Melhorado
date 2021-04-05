@@ -1,0 +1,6 @@
+itens=$(ls -F | grep -v '/')
+
+for i in ${itens}
+do
+	echo $(wc -l ${i} | sort -n)
+done
