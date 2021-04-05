@@ -1,0 +1,6 @@
+echo "${*}"
+
+for i in ${*}
+do
+	$(ls ${i} &> /dev/null) && echo ${i} 'Sim' || echo ${i}  'Não'
+done
