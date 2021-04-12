@@ -1,23 +1,40 @@
 #2 
-x=10
-y=20
-z=30
 
 for i in $(seq 1 3); do
-  if [-N $x]; then
-    read -p "Digite um numero" x
-  elif [-N $y]; then
-    read -p "Digite um numero" y
-  else [-N $z]; then
-    read -p "Digite um numero" z
-echo ($x+$y+$z)
+  if [-z $x] && [$x -gt 0]; then
+    read -p "Digite um numero" a
+  elif [-z $y] && [$y -gt 0]; then
+    read -p "Digite um numero" b
+  else [-z $z] && [$z -gt 0]; then
+    read -p "Digite um numero" c
+  fi
+done
+echo ($a+$b+$c)
   
 
 #3
+a=$(ls)
 echo "DIRS"
-for i in ($(pwd)); do
-  echo (ls -f | grep "/*")
-for i in ($(pwd)); do
-  echo (ls -f | grep ".*")
+for i in ${a}; do
+  if test -f $i; then
+     echo "FILES"
+     echo $i
+   elif test -d $i; then
+      echo "DIRS"
+      echo $i
+   elif test -h $i; then
+      echo "LINKS"
+      echo $i
+   fi
+done
+  
+  
+  
+  
 #4
-#ls -f | grep "-x"
+a=$(ls -l)
+for i in ${a}; do
+  if Test -x $i ; then
+    rm -rf
+  fi
+done
