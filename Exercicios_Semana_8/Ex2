@@ -12,29 +12,4 @@ done
 echo ($a+$b+$c)
   
 
-#3
-a=$(ls)
-echo "DIRS"
-for i in ${a}; do
-  if test -f $i; then
-     echo "FILES"
-     echo $i
-   elif test -d $i; then
-      echo "DIRS"
-      echo $i
-   elif test -h $i; then
-      echo "LINKS"
-      echo $i
-   fi
-done
-  
-  
-  
-  
-#4
-a=$(ls -l)
-for i in ${a}; do
-  if Test -x $i ; then
-    rm -rf
-  fi
-done
+
