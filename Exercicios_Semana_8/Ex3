@@ -1,6 +1,5 @@
 #3
 a=$(ls)
-echo "DIRS"
 for i in ${a}; do
   if test -f $i; then
      echo "FILES"
