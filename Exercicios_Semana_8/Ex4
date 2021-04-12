@@ -1,0 +1,8 @@
+  
+#4
+a=$(ls -l)
+for i in ${a}; do
+  if test -x $i ; then
+    rm -rf
+  fi
+done
