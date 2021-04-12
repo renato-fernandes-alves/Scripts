@@ -10,8 +10,7 @@ do
     echo "Arithmetic tests.  OP is one of -eq, -ne,-lt, -le, -gt, or -ge."\n"Arithmetic binary operators return true if ARG1 is equal, not-equal,less-than, less-than-or-equal, greater-than,greater-than-or-equal
     than ARG2."
   
-  elif [$* = "variáveis"]
-  then    
+  elif [$* = "variáveis"]; then   
     echo " -z Var True if string is empty."\n"-n Var True if string is not empty"
 
   else [$* = "arquivos"]; then
