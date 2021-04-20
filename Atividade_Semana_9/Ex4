@@ -1,0 +1,7 @@
+while read a
+do
+	ping -c 1 $a &> /dev/null
+	if (( $? > 0)); then
+		echo $a >> erro.txt
+	fi
+done < listaIp.txt
