@@ -9,9 +9,9 @@ while true; do
 		'aritmetica')
 			echo "-lt Identifica se é menor que o outro"
 			echo "-gt Identifica se é maior que o outro"
-      echo "-ge Identifica se é maior ou igual que o outro"
+                        echo "-ge Identifica se é maior ou igual que o outro"
 			echo "-le Identifica se é menor ou igual que o outro"
-      echo "-ne Identifica se é diferente que outro"
+                        echo "-ne Identifica se é diferente que outro"
 			echo "-eq Identifica se é igual que outro" ;;
 		'strings')
 			echo "= Identifica se a expressao igual de outra"
@@ -25,13 +25,13 @@ while true; do
 			echo "-e Identifica se existe"
 			echo "-O Identifica se o dono do arquivo é o usuário que esta executando"
 			echo "-s Identifica se o arquivo não esta vazio"
-      echo "-x Identifica se o usuário tem permissão de execução"
-      echo "-w Identifica se o usuário tem permissão de gravação"
+                        echo "-x Identifica se o usuário tem permissão de execução"
+                        echo "-w Identifica se o usuário tem permissão de gravação"
 			echo "-r Identifica se o usuário tem permissão de leitura"
-      echo "-L Identifica se é um link-simbólico"
+                        echo "-L Identifica se é um link-simbólico"
 			echo "-ot Identifica se é mais antigo"
 			echo "-ef Identifica se é igual"
-      echo "-nt Identifica se é mais recente";;
+                        echo "-nt Identifica se é mais recente";;
 		'extended')
 			echo "Para uma comparação numérica usamos eq, ne, lt e gt, usando o colchetes duplo pode usar as comparações dessa maneira '<',e '>','==', '!='"
 			echo "'[ ]' E um sinônimo de comando de teste."
