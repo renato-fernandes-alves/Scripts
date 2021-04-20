@@ -4,11 +4,11 @@ do
 	read -p "Digite uma Opção: " opc
 	case $opc in
       'd')
-			for i in $(ls)
+      for i in $(ls)
       do
-				if test -d ${i}; then
-					echo ${i}
-				fi
+	      if test -d ${i}; then
+	        echo ${i}
+        fi
 			done ;;
       'f')
 			for i in $(ls)
