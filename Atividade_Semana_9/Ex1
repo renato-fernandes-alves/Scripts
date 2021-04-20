@@ -1,4 +1,5 @@
-while true; do
+while true
+do
 	echo -e "Opções\nOpção (1) logica digite: 'logica' \nOpção (2) aritmetica digite: 'aritmetica'\nOpção (3) Strings digite: 'strings'\nOpção (4) váriaveis digite: 'variaveis\nOpção (5) arquivos digite: 'arquivos'\nOpção (6)notação estendida digite: 'extended'\nOpção (7)Sair digite: 'sair'\n"
 	read -p "Digite uma opção: " opc
 	case $opc in 'logica')
