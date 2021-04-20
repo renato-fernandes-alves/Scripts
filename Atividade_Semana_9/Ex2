@@ -6,4 +6,4 @@ do
 		echo "Arquivo Criado"
 		break
 	fi
-done
+done   
