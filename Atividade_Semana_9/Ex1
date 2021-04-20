@@ -1,0 +1,41 @@
+while true; do
+	echo -e "Opções\nOpção (1) logica digite: 'logica' \nOpção (2) aritmetica digite: 'aritmetica'\nOpção (3) Strings digite: 'strings'\nOpção (4) váriaveis digite: 'variaveis\nOpção (5) arquivos digite: 'arquivos'\nOpção (6)notação estendida digite: 'extended'\nOpção (7)Sair digite: 'sair'\n"
+	read -p "Digite uma opção: " opc
+	case $opc in 'logica')
+			echo "Operadores para logica"
+			echo " ! Identifica a expressão como Falso"
+			echo "-a Identifica se uma expressão AND outra expressão são verdadeiras"
+			echo "-o Identifica se uma expressão OR outra expressão são verdadeiras;;
+		'aritmetica')
+			echo "-lt Identifica se é menor que o outro"
+			echo "-gt Identifica se é maior que o outro"
+      echo "-ge Identifica se é maior ou igual que o outro"
+			echo "-le Identifica se é menor ou igual que o outro"
+      echo "-ne Identifica se é diferente que outro"
+			echo "-eq Identifica se é igual que outro" ;;
+		'strings')
+			echo "= Identifica se a expressao igual de outra"
+			echo "!= Identifica se a expressao é diferente de outra" ;;
+		'variaveis')
+			echo "-n Identifica se uma expressao não é nula"
+			echo "-z Identifica se uma expressao nula" ;;
+		'arquivos')
+			echo "-d Identifica se é diretório"
+			echo "-f Identifica se é arquivo"
+			echo "-e Identifica se existe"
+			echo "-O Identifica se o dono do arquivo é o usuário que esta executando"
+			echo "-s Identifica se o arquivo não esta vazio"
+      echo "-x Identifica se o usuário tem permissão de execução"
+      echo "-w Identifica se o usuário tem permissão de gravação"
+			echo "-r Identifica se o usuário tem permissão de leitura"
+      echo "-L Identifica se é um link-simbólico"
+			echo "-ot Identifica se é mais antigo"
+			echo "-ef Identifica se é igual"
+      echo "-nt Identifica se é mais recente";;
+		'extended')
+			echo "Para uma comparação numérica usamos eq, ne, lt e gt, usando o colchetes duplo pode usar as comparações dessa maneira '<',e '>','==', '!='"
+			echo "'[ ]' E um sinônimo de comando de teste."
+			echo "'[[ ]]'E uma versão mais aprimorada." ;;
+		'sair') break ;;
+	esac
+done
