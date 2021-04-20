@@ -1,0 +1,36 @@
+while true
+do
+	echo -e "Opções\nOpção (1)Exibir diretorios digite: 'd'\nOpção (2) Exibir arquivos digite: 'f'\nOpção (3) Exibir o conteudo de um arquivo digite: 'v <arq>'\nOpção (4) Para   trocar de diretorio digite: 'cd <dir>'\nOpção (5) Para sair digite: 'q'\n"
+	read -p "Digite uma Opção: " opc
+	case $opc in
+      'd')
+			for i in $(ls)
+      do
+				if test -d ${i}; then
+					echo ${i}
+				fi
+			done ;;
+      'f')
+			for i in $(ls)
+      do
+				if test -f ${i}; then
+					echo ${i}
+				fi
+			done ;;
+		"v "*"")
+			a=$(echo $opc | cut -c 3-)
+			if test -f $a; then
+				echo $(cat $a)
+			else
+				echo "O arquivo $a não existe"
+			fi ;;
+		"cd "*"")
+			b=$(echo $opc | cut -c 3-)
+			if test -d $b; then
+				cd $b'/'
+			else
+				echo "O diretorio não existe"
+			fi ;;
+		'q') break ;;
+	esac
+done
