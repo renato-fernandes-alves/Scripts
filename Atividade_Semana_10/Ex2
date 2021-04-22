@@ -1,4 +1,3 @@
-if cat $*
-cat $* | tr '/n' 
+cat $* | tr -s '\n' '\n' | wc -l cut -1
 
-#Ver como remover apenas linhas vazias usando o Tr, ou tentar usar o pipe junto com outros comandos.
+
