@@ -1,2 +1,4 @@
-$ echo 'obase=2; ibase=10; 70' | bc 
-# Primeiro separar os numeros dos pontos, depois ler apenas os numeros e usar o conversos para binario.
+read -p "Digite um numero IP: " a >>  ip.txt 
+for i in (cat ip.txt | tr -d "."); do
+    $ echo "Octeto #1:${i} em binário $(( obase=2; ibase=10; ${i}' | bc ))"
+  
