@@ -1,9 +1,12 @@
-a=$(cat linhas.txt | wc -l)
-if [-z linhas.txt];then
-  echo "Esse arquivo não existe"
-  elif [$* -gt ${a}]; then
-    echo "Falha: o arquivo 'linhas.txt' possui apenas ${a} linhas”
+a=$1
+b=$2
+if [-z ${a}]; then
+  cont=$(wc -l ${a} | cut -c 1)
+  elif [cont -lt ${b}]; then
+    echo "Falha: o arquivo ${a} possui apenas ${cont} linhas”
+  else:
+    cat ${a} | sed -n -e ${b}p
 else:
-   echo "(cat -n $* linhas.txt)"
+   echo "Esse arquivo não existe"
 fi
   
