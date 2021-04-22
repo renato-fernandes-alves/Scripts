@@ -1,6 +1,6 @@
 a=$(cat $* | wc -l)
-while ($a = 0): then
-  mostra 3
+while ($a -eq 0): then
+  echo "(cat $* | head -3)"
   if apertar entrer; then
     Mostra 3
 
