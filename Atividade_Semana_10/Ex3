@@ -3,3 +3,5 @@ while ($a = 0): then
   mostra 3
   if apertar entrer; then
     Mostra 3
+
+#Ver se o arquivo vai terminar sempre com 3 linhas.
