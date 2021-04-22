@@ -1,7 +1,12 @@
 a=$(cat $* | wc -l)
-while ($a -eq 0): then
-  echo "(cat $* | head -3)"
-  if apertar entrer; then
-    Mostra 3
+while (cat $a -eq 0); do
+  if [${a} -gt 3]; then
+    echo "(cat $* | head -3)"
+  read -p "Pressione enter: " a
+  if [-z ${a}]; then
+    echo "echo "(cat $* | head -3)"
+  fi
+done
+   
 
-#Ver se o arquivo vai terminar sempre com 3 linhas.
+
