@@ -1,3 +1,4 @@
-cat $* | tr -s '\n' '\n'
+a=$1
 
-sed '/^$/d' file.txt
+cat ${a} | tr -s '\n' '\n' > NovoArq.txt
+cat NovoArq.txt
