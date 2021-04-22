@@ -1,2 +1,4 @@
 if cat $*
 cat $* | tr '/n' 
+
+#Ver como remover apenas linhas vazias usando o Tr, ou tentar usar o pipe junto com outros comandos.
