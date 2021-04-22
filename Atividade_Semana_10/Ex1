@@ -1,8 +1,9 @@
 a=$(cat linhas.txt | wc -l)
 if [-z linhas.txt];then
   echo "Esse arquivo não existe"
-elif [$* -gt ${a}]; then
-  echo "Falha: o arquivo 'linhas.txt' possui apenas ${a} linhas”
+  elif [$* -gt ${a}]; then
+    echo "Falha: o arquivo 'linhas.txt' possui apenas ${a} linhas”
 else:
    echo "(cat -n $* linhas.txt)"
+fi
   
