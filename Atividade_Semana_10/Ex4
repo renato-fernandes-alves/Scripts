@@ -1,5 +1,7 @@
-read -p "Digite um numero IP: " a >>  ip.txt 
-for i in (cat ip.txt | tr -d "."); do
-    $ echo "Octeto #1:${i} em binário $(( obase=2; ibase=10; ${i}' | bc ))"
+a=$1
+$(echo $a | tr '.' '\n' > Arq.txt)
+for i in $(cat Arq.txt); do
+  b=$(echo "obase=2; ${i}" | bc)
+  echo "Octeto #1: ${i} em binário ${b}"
 done
-  
+
