@@ -1,12 +1,20 @@
-a=$(cat $* | wc -l)
-while (cat $a -eq 0); do
-  if [${a} -gt 3]; then
-    echo "(cat $* | head -3)"
-  read -p "Pressione enter: " a
-  if [-z ${a}]; then
-    echo "echo "(cat $* | head -3)"
-  fi
-done
-   
+a=$1
+cont=3
+if [-f ${a}]; then
+	qt=$(wc -l ${a} | cut -c 1)
+	cat ${a} | head -${cont}
+  while true; do
+		read -p "Aperte Enter para continuar" a
+		if [-z ${a}]; then
+			cont=$((${cont} + 3))
+			cat ${a} | head -${cont}
+		if [${cont} -ge ${qt}]; then
+			break
+		fi
+	  fi	
+  done
+else
+	echo "Arquivo não existe"
+fi
 
 
