@@ -2,7 +2,7 @@ a=$1
 cont=3
 if [-f ${a}]; then
 	qt=$(wc -l ${a} | cut -c 1)
-	cat ${a} | head -${cont}
+	cat ${a} | head -${cont} 
   while true; do
 		read -p "Aperte Enter para continuar" a
 		if [-z ${a}]; then
