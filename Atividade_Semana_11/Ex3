@@ -8,3 +8,4 @@ while true; do
 		echo 'Senha não confirmada, por favor digite sua senha corretamente!'
 	fi
 done
+  
