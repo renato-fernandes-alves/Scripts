@@ -1,8 +1,8 @@
 while true; do
 	read -p "Digite uma senha: " senha
-	echo $senha | grep -E '\b[A-Z]+[a-z]+[0-9]+|[A-Z]+[0-9]+[a-z]+|[a-z]+[A-Z]+[0-9]+|[a-z]+[0-9]+[A-Z]+|[0-9]+[a-z]+[A-Z]+|[0-9]+[A-Z]+[a-z]+\b' &> /dev/null
+	echo $senha | grep -E '\b[0-9]+[a-z]+[A-Z]+|[0-9]+[A-Z]+[a-z]+|[A-Z]+[a-z]+[0-9]+|[A-Z]+[0-9]+[a-z]+|[a-z]+[A-Z]+[0-9]+|[a-z]+[0-9]+[A-Z]+\b' &> /dev/null
 	if [ $? -eq 0 ]; then
-		echo 'Senha correta'
+		echo 'Senha Valida'
 		break
 	else
 		echo 'Senha não confirmada, por favor digite sua senha corretamente!'
