@@ -3,18 +3,23 @@ for i in $*; do
 		'a')
 			echo "Diretorios"
 			ls -la | grep -E "^[d]"
-			echo "";;
+			echo ""
+      ;;
 		'b')
 			echo "Executaveis"
 			ls -la | grep -E "^-[rwx]{3}"
-			echo "";;
+			echo ""
+			;;
 		'c')
 			echo "Scriptshell"
 			ls -la | grep -E ".*\.sh"
-			echo "";;
+			echo ""
+			;;
 		'd')
 			echo "Links"
 			ls -la | grep -E "^[l]"
-			echo "";;
+			echo ""
   esac
 done
+
+
