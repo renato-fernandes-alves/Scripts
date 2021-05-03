@@ -1,0 +1,8 @@
+a=$1
+
+if [ -f $a ];then
+	cat $a | grep . > /tmp/arq_sem_enter
+	cat /tmp/arq_sem_enter
+else
+	echo "Esse arquivo não existe"
+fi
