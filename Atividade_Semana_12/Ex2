@@ -3,15 +3,15 @@ for i in $*; do
 		case $i in
 			a)
 				echo "Remover Letras"
-				sed -E -e 's/[A-Za-z]//g' $arq
+				sed -E 's/[A-Za-z]//g' $arq
 				;;
 			b)
-				echo "Remover numeros"
-				sed -E -e 's/[0-9]//g' $arq
+				echo "Remover Numeros"
+				sed -E 's/[0-9]//g' $arq
 				;;
 			c)
-				echo "Substituindo Caracteres"
-				sed -E -e 's/([[:punct:]])+/<?>/g' $arq
+				echo "Substituir Caracteres"
+				sed -E 's/([[:punct:]])+/<?>/g' $arq
 				;;
 		esac
 done
