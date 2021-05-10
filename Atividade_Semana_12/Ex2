@@ -1,6 +1,5 @@
 read -p "Digite o nome do arquivo: " arq
-if [ -f $arq ];then
-	for i in $*; do
+for i in $*; do
 		case $i in
 			a)
 				echo "Remover Letras"
@@ -18,6 +17,4 @@ if [ -f $arq ];then
 				echo "Esse comando não existe"	
 		esac
 	done
-else
-	echo "Arquivo não existe"
-fi
+
