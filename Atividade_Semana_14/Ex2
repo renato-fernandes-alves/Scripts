@@ -1,0 +1,7 @@
+read -p "Digite o nome do arquivo: " a
+. arquivo1.sh
+if [ -f $a ];then
+	echo "Maior = $(maior) Menor = $(menor)"
+else
+	echo "Arquivo não encontrado"
+fi
