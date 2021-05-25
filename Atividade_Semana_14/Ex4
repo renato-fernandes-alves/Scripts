@@ -4,7 +4,7 @@ if [ -f $a ];then
 	for i in $*;do
 		case $i in
 			a)
-				removerT $aa
+				removerT $a
 				;;
 			b)
 				removerS $a				
