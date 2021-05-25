@@ -1,21 +1,22 @@
 function maior {
-	var=""
+  var=0
 	for i in $*;do
-    var=$(echo $i)
 		if [ $var -lt $i ];then
 			var=$(echo $i)
 		fi
   done
 	echo $var
 }
+maior $1 $2
+
 
 function menor {
-  var=""
+  var=0
 	for i in $*;do
-		var=$(echo $i)
 		if [ $var -gt $i ];then
 			var=$(echo $i)
 		fi
   done
 	echo $var
 }
+menor $1 $2
