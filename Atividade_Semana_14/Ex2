@@ -1,7 +1,8 @@
 read -p "Digite o nome do arquivo: " a
-. arquivo1.sh
+. ex1.sh
 if [ -f $a ];then
-	echo "Maior = $(maior) Menor = $(menor)"
+        echo "Maior = $(maior $(cat $a | tr -s ' ''\n'))"
+        echo "Menor = $(menor $(cat $a | tr -s ' ''\n'))"
 else
-	echo "Arquivo não encontrado"
+        echo "Erro: Arquivo não encontrado ou inxistente"
 fi
