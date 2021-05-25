@@ -11,7 +11,7 @@ maior $1 $2
 
 
 function menor {
-  var=0
+  var=999999
 	for i in $*;do
 		if [ $var -gt $i ];then
 			var=$(echo $i)
