@@ -1,5 +1,5 @@
 read -p "Digite o nome do arquivo: " a
-. ex1.sh
+. Ex1.sh
 if [ -f $a ];then
         echo "Maior = $(maior $(cat $a | tr -s ' ''\n'))"
         echo "Menor = $(menor $(cat $a | tr -s ' ''\n'))"
