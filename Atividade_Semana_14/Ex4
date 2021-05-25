@@ -4,17 +4,15 @@ if [ -f $a ];then
 	for i in $*;do
 		case $i in
 			a)
-				remoT=$(removerT $a)
-				cat $remoT
+				removerT $aa
 				;;
 			b)
-				remoS=$(removerS $a)
-				cat $remoS
+				removerS $a				
 				;;
 		esac
 	done
 else
-	echo "Arquivo não existe!"
+	echo "Arquivo não encontrado ou inexistente"
 fi
 
 
