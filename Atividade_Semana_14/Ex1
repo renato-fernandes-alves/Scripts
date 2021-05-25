@@ -1,7 +1,7 @@
 function maior {
 	var=""
 	for i in $*;do
-    valor=$(echo $i)
+    var=$(echo $i)
 		if [ $var -lt $i ];then
 			var=$(echo $i)
 		fi
@@ -10,7 +10,7 @@ function maior {
 }
 
 function menor {
-  valor=""
+  var=""
 	for i in $*;do
 		var=$(echo $i)
 		if [ $var -gt $i ];then
