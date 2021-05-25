@@ -1,0 +1,20 @@
+. modulo.sh
+read -p "Digite o nome do arquivo: " a
+if [ -f $a ];then
+	for i in $*;do
+		case $i in
+			a)
+				remoT=$(removerT $a)
+				cat $remoT
+				;;
+			b)
+				remoS=$(removerS $a)
+				cat $remoS
+				;;
+		esac
+	done
+else
+	echo "Arquivo não existe!"
+fi
+
+
