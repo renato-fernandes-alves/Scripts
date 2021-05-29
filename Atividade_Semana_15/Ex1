@@ -1,0 +1,15 @@
+function maior_do_array {
+	maior_valor=0
+	for i in $*;do
+			maior_valor=$i
+			if [ $i -gt $maior_valor ];then
+				maior_valor=$i
+			fi
+	done
+  
+	echo $mvalor
+}
+
+read -p "Digite varios numeros! " num
+var=( $num )
+maior_do_array ${A[*]}
