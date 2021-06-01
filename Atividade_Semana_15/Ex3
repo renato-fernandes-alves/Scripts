@@ -1,0 +1,11 @@
+arquivo="$1"
+contador=1000
+menor=""
+while read linha; do
+    num=${#linha}
+    if [ $contador -gt $num ];then
+      contador=$num
+      menor="${linha}"
+    fi
+done < "$arquivo"
+echo "$menor"
